@@ -19,13 +19,13 @@ const ProjectInput = () => {
                 <div className="col-sm-8">
                     <div className="row" style={{ marginLeft: "60px" }}>
                         <div className="col-sm-4">
-                            <Link className="nav-link" to="/priorities">Приоритеты задач</Link>
+                            <Link className="nav-link" to="/settings/priorities">Приоритеты задач</Link>
                         </div>
                         <div className="col-sm-4">
-                            <Link className="nav-link" to="/">Участники</Link>
+                            <Link className="nav-link" to="/settings/participants">Участники</Link>
                         </div>
                         <div className="col-sm-4">
-                            <Link className="nav-link" to="/categories">Категории задач</Link>
+                            <Link className="nav-link" to="/settings/categories">Категории задач</Link>
                         </div>
                     </div>
                 </div>
