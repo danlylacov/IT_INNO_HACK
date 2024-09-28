@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Sidebar from './Sidebar';
+import TopBar from './TopBar';
+import ProjectInput from './ProjectInput';
+import TaskTable from './TaskTable';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div className="container-fluid" style={{ height: '100vh' }}>
+            <TopBar />
+            <div className="row" style={{ height: '100%' }}>
+                <Sidebar />
+                <div className="col main-content" style={{ backgroundColor: '#ffffff', padding: '20px' }}>
+                    <ProjectInput />
+                    <TaskTable />
+                    <button type="button" className="button">Добавить</button>
+                </div>
+            </div>
+        </div>
+    );
+};
 
 export default App;
