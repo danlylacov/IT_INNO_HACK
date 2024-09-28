@@ -1,0 +1,92 @@
+.task-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 600px;
+  margin: 20px;
+}
+
+.task-card-header .badge {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 12px;
+  margin-bottom: 15px; /* Чтобы отступить значок приоритета от заголовка */
+  display: inline-block;
+}
+
+.task-title-container {
+  margin-bottom: 20px; /* Отступ между заголовком и остальной формой */
+}
+
+.task-title {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #D9D9D9;
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #333;
+  width: 40%;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.form-group select {
+  width: 55%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #D9D9D9;
+}
+
+.task-text {
+  width: 375px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #D9D9D9;
+  resize: none; /* Отключаем изменение размера поля */
+  margin: 20px auto; /* Центрирование поля и отступы сверху и снизу */
+}
+
+.upload-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.upload-link:hover {
+  text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
