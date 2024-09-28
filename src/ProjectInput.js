@@ -1,6 +1,15 @@
+// ProjectInput.js
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const ProjectInput = () => {
+    const navigate = useNavigate();
+
+    const handleNavigation = (path) => {
+        navigate(path);
+    };
+
     return (
         <div className="navigation">
             <div className="row align-items-center">
@@ -9,11 +18,15 @@ const ProjectInput = () => {
                 </div>
                 <div className="col-sm-8">
                     <div className="row" style={{ marginLeft: "60px" }}>
-                        {['Приоритеты задач', 'Участники', 'Прогресс задач'].map((text, index) => (
-                            <div key={index} className={`col-sm-${index === 1 ? "4 text-success" : "4"}`}>
-                                <a href="#">{text}</a>
-                            </div>
-                        ))}
+                        <div className="col-sm-4">
+                            <Link className="nav-link" to="/priorities">Приоритеты задач</Link>
+                        </div>
+                        <div className="col-sm-4">
+                            <Link className="nav-link" to="/">Участники</Link>
+                        </div>
+                        <div className="col-sm-4">
+                            <Link className="nav-link" to="/categories">Категории задач</Link>
+                        </div>
                     </div>
                 </div>
             </div>
